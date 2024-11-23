@@ -20,6 +20,6 @@ A SafeQueue<A>::pop() {
 
 template <typename A>
 bool SafeQueue<A>::empty() {
- // std::unique_lock<std::mutex> lock_m(m_mutex); //тут почему-то вылетает исключени если оставить юниклок
+
   return m_queue.empty();
 }
